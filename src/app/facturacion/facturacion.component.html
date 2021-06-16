@@ -10,16 +10,21 @@
                 <div class="card-body">
                     <form id="guiaForm">
                         <div class="mb-4 row input-container">
-                            <label for="txtInputGuia" class="col-md-12 col-lg-2 col-form-label">Codigo QR</label>
-                            <div class="col-md-10 col-lg-8">
+
+                            <label for="txtInputGuia"
+                                class="col-md-12 col-lg-2 col-form-label py-0 d-flex align-items-center justify-content-center"
+                                style="font-size: 20px;">Codigo QR</label>
+
+                            <div class="col-md-12 col-lg-10">
+
                                 <input type="text" class="form-control" id="txtInputGuia" mask="000-0000000"
                                     (change)="onInputChange();" [(ngModel)]="value" name="value" autocomplete="off"
                                     autofocus #inputText>
                             </div>
-                            <div class="col-2">
+                            <!-- <div class="col-sm-12 col-md-2 p-3" style="display: flex; flex-direction: column; align-items: center">
                                 <div class="loader"></div>
                                 <div style="font-size: 14px; text-align: center;">Guardando...</div>
-                            </div>
+                            </div> -->
                         </div>
                     </form>
                     <table class="table">

@@ -1,6 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-import { type } from 'os';
 import { Guia } from '../clases/Guia';
 import { GuiaService } from '../services/guia.service';
 
@@ -61,7 +60,7 @@ export class FacturacionComponent implements OnInit {
   }
 
   isValid(val) {
-    return /^([0-9]{10})*$/.test(val) && (val !== "" || val !== null);
+    return /^([0-9]{10})*$/.test(val) && (val !== "" || val.length !== 0);
   }
 
   changeFormat(val: string) {

@@ -1,3 +1,19 @@
 {
-  "guias": []
+  "guias": [
+    {
+      "NroGuia": "232-4234234",
+      "EstadoProceso": 1,
+      "id": 1
+    },
+    {
+      "NroGuia": "123-1312312",
+      "EstadoProceso": 1,
+      "id": 2
+    },
+    {
+      "NroGuia": "423-4234234",
+      "EstadoProceso": 1,
+      "id": 3
+    }
+  ]
 }
